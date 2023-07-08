@@ -1,0 +1,6 @@
+.:53 {
+    errors
+    log
+    rewrite name regex (.*) ${TARGET_DOMAIN}
+    forward . /etc/resolv.conf
+}
